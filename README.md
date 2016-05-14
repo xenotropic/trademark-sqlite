@@ -1,5 +1,6 @@
 # trademark-sqlite
-Parses USPTO trademark xml files into a sqlite database. 
+Parses USPTO trademark xml files into a sqlite database. Currently only tested with
+a set of files that appear to contain 2015 and earlier data. 
 
 ![alt tag](demo_screen.png)
 
