@@ -33,8 +33,12 @@ the heavy lifting
 You can also download the database, 487MB, from https://morris.cloud/tmdb.sqlite3
 
 ** TO-DO items **
-Additional verification to ensure all 2015-and-earlier trademarks are included in this data. 
-Add more fields, especially goods and services description and live/dead indicator.
-Parse daily xml files. Figure out how USPTO deals with updates to existing records.
+(1) Additional verification to ensure all 2015-and-earlier trademarks are included in this data. 
 
-If you are interested in contributing email me at joe at morris dot cloud
+(2) Add more fields, especially goods and services description and live/dead indicator.
+
+(3) Parse daily xml files. Figure out how USPTO deals with updates to existing records.
+
+If you are interested in contributing email me at joe at morris dot cloud. Eventually I 
+hope to build an open-source trademark monitor (i.e., check periodically for similar marks
+to one's own existing marks). 
