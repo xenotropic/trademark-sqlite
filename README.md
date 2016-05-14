@@ -2,6 +2,7 @@
 Parses USPTO trademark xml files into a sqlite database. 
 
 ** Getting the data **
+
 The data is at https://data.uspto.gov/data3/trademark/dailyxml/applications/
 In the data/ directory, get_data_from_uspto.php does what the filename says. It uses wget. 
 The 53 zip files add up to about 5GB. 
