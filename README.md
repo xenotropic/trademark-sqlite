@@ -18,10 +18,10 @@ the daily files after that.
 
 Use the create_tmdb.sql file to initialize a sqlite database. The database name by default
 is ./tmdb.sqlite3
-Unless your username is joe, and perhaps not even then, you will need to set the directory
-where the database is in parse_trademarks.php where it says "change your path". 
-So a sameple command would be
-sqlite3 tmdb.sqlite3 < create_tmdb.sql
+A command to initialize the database would be `sqlite3 tmdb.sqlite3 < create_tmdb.sql`
+
+The default path to the database is /home/joe/trademark-sqlite. Unless your name is also joe, 
+you will need to set the directory in parse_trademarks.php where it says "change your path". 
 
 ## Loading the database
 
