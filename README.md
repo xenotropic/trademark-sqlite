@@ -7,10 +7,10 @@ a set of files that appear to contain 2015 and earlier data.
 ## Getting the data
 
 The data is at https://data.uspto.gov/data3/trademark/dailyxml/applications/
-In the data/ directory, get_data_from_uspto.php does what the filename says. It uses wget. 
-The 53 zip files add up to about 5GB. 
+In the data/ directory of this repo, get_data_from_uspto.php does what the filename says. 
+It uses wget. It adds up to about 5GB. 
 
-The script only downloads the initial set that were released on 12/31/2015, which I think 
+The script only downloads the initial set of 53 files that were released on 12/31/2015, which I think 
 (USPTO documentation is sparse) is all marks filed before that date. It does not download
 the daily files after that. 
 
@@ -33,7 +33,7 @@ serial and registration number) and inserts into the database.
 process_files.php runs a loop that calls the function in parse_trademarks.php that does
 the heavy lifting
 
-You can also download the database, 487MB, from https://morris.cloud/tmdb.sqlite3
+You can also download the database created by these scripts, which is 487MB, from https://morris.cloud/tmdb.sqlite3
 
 ## TO-DO items
 (1) Additional verification to ensure all 2015-and-earlier trademarks are included in this data. 
