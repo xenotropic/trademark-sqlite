@@ -1,7 +1,8 @@
 # trademark-sqlite
 Parses USPTO trademark xml files into a sqlite database. 
+![alt tag](demo_screen.png)
 
-** Getting the data **
+## Getting the data
 
 The data is at https://data.uspto.gov/data3/trademark/dailyxml/applications/
 In the data/ directory, get_data_from_uspto.php does what the filename says. It uses wget. 
@@ -11,7 +12,7 @@ The script only downloads the initial set that were released on 12/31/2015, whic
 (USPTO documentation is sparse) is all marks filed before that date. It does not download
 the daily files after that. 
 
-** Initialize the database **
+## Initialize the database
 
 Use the create_tmdb.sql file to initialize a sqlite database. The database name by default
 is ./tmdb.sqlite3
@@ -20,7 +21,7 @@ where the database is in parse_trademarks.php where it says "change your path".
 So a sameple command would be
 sqlite3 tmdb.sqlite3 < create_tmdb.sql
 
-** Loading the database **
+## Loading the database
 
 Once you have the files, load the database. 
 
@@ -32,7 +33,7 @@ the heavy lifting
 
 You can also download the database, 487MB, from https://morris.cloud/tmdb.sqlite3
 
-** TO-DO items **
+## TO-DO items
 (1) Additional verification to ensure all 2015-and-earlier trademarks are included in this data. 
 
 (2) Add more fields, especially goods and services description and live/dead indicator.
